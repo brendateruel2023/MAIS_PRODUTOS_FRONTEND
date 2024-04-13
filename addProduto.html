@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MaisProdutos - Adicionar Produto</title>
+  <link rel="stylesheet" href="css/addProduto.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 class="titulo">MaisProdutos</h1>
+      <nav>
+        <ul class="nav">
+          <li class="edit"><a href="produtos.html">Produtos</a></li>
+          <li class="edit"><a href="#">Carrinho</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div class="container mt-5">
+    <form id="product-form">
+      <div class="mb-3">
+        <label for="product-image" class="form-label">Imagem do Produto:</label>
+        <input type="file" id="product-image" class="form-control" accept="image/*">
+      </div>
+      <div class="mb-3"> <br><br>
+        <label for="product-description" class="form-label">Descrição:</label>
+        <textarea id="product-description" rows="4" class="form-control" placeholder="Descrição do produto..."></textarea>
+      </div>
+      <div class="mb-3"> <br><br>
+        <label for="product-price" class="form-label">Preço:</label>
+        <input type="number" id="product-price" class="form-control" placeholder="Preço do produto...">
+      </div>
+      <div class="mb-3"> <br><br>
+        <label for="product-category" class="form-label">Categorias:</label>
+        <select id="product-category" class="form-select" multiple>
+          <option value="eletronics">Eletrônicos</option>
+          <option value="clothing">Roupas</option>
+          <option value="books">Livros</option>
+        </select>
+      </div> <br><br>
+      <button type="button" class="btn btn-adicionar" onclick="validateAction('adicionar')">Adicionar Produto</button>
+    </form>
+  </div>
+  <script src="js/addProduto.js"></script>
+</body>
+</html>

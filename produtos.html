@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>    
+    <link rel="stylesheet" href="css/produtos.css">
+    <title>MaisProdutos - Produtos</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">MaisProdutos</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+                  Categorias
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                  <li><a class="dropdown-item" href="#celular">Celular</a></li>
+                  <li><a class="dropdown-item" href="#notebook">Notebook</a></li>
+                  <li><a class="dropdown-item" href="#tv">Televisão</a></li>
+                </ul>
+              </li>
+            </ul>
+            <a href="addProduto.html"><button class="btn" id="addCurso">Adicionar Produto</button></a>
+          </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div id="carouselProdutos" class="carousel slide carousel-dark" data-bs-ride="carousel" data-bs-interval="2000">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselProdutos" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselProdutos" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselProdutos" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner" style="height: 30em;">
+                <div class="carousel-item h-100 active" style="background: url(images/celular/cel3.png) center/contain no-repeat;"></div>
+                <div class="carousel-item h-100" style="background: url(images/notebook/note1.png) center/contain no-repeat;"></div>
+                <div class="carousel-item h-100" style="background: url(images/tv/tv1.png) center/contain no-repeat;"></div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProdutos" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProdutos" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.boundle.min.js" 
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+        crossorigin="anonymous">
+    </script>
+
+    <div class="container bg-info" id="celular">
+        <h2>Celular</h2>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/celular/cel1.jpg" class="img-fluid card-img" alt="...">
+                    <div>
+                        <h1>iPhone 15 Plus</h1>
+                        <h2>Uauforia. Dynamic Island. Câmera de 48 MP com teleobjetiva de 2x. Compre agora. Projetado para fazer a diferença. Conheça o iPhone 15. Teleobjetiva de 2x. USB-C. iOS 17. Dynamic Island.</h2>
+                        <span>R$ 8.700,00</span>
+                        <a href="detalheProduto.html"><button>Saiba mais</button></a>
+                        <a href="editProduto.html"><button>Editar</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/celular/cel2.jpg" class="img-fluid card-img" alt="...">
+                    <div>
+                        <h1>Poco X6 PRO</h1>
+                        <h2>O Poco X6 Pro é um smartphone Android avançado e abrangente em todos os pontos de vista com algumas características excelentes.</h2>
+                        <span>R$ 2,110,00</span>
+                        <a href="detalheProduto.html"><button>Saiba mais</button></a>
+                        <a href="editProduto.html"><button>Editar</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/celular/cel3.png" class="img-fluid card-img" alt="...">
+                    <div>
+                        <h1>Iphone 15</h1>
+                        <h2>A tela de 6.1 polegadas coloca esse Apple no topo de sua categoria. A resolução também é alta: 2556x1179 pixel.</h2>
+                        <span>R$ 5.000,00</span>
+                        <a href="detalheProduto.html"><button>Saiba mais</button></a>
+                        <a href="editProduto.html"><button>Editar</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/celular/cel4.jpg" class="img-fluid card-img" alt="...">
+                    <div>
+                        <h1>samsung s21</h1>
+                        <h2>Tem uma grande tela de 6.2 polegadas com uma resolução de 2400x1080 pixels. As funcionalidades oferecidas pelo Samsung Galaxy S21 são muitas e inovadoras.</h2>
+                        <span>R$ 5.500,00</span>
+                        <a href="detalheProduto.html"><button>Saiba mais</button></a>
+                        <a href="editProduto.html"><button>Editar</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>      
+    </div>
+
+    <br></br>
+
+    <div class="container bg-info" id="notebook">
+        <h2>Notebook</h2>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/notebook/note1.png" class="img-fluid card-img" alt="...">
+                    <div>
+                        <h1>Notebook N.A.V.E</h1>
+                        <h2>Notebook Gamer NAVE Lunar i5-12450H GM5AGEO</h2>
+                        <span>R$ 4799,00</span>
+                        <a href="detalheProduto.html"><button>Saiba mais</button></a>
+                        <a href="editProduto.html"><button>Editar</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/notebook/note2.jpg" class="img-fluid card-img" alt="...">
+                    <div>
+                        <h1>Notebook Inspiron 15</h1>
+                        <h2>12ª geração Intel® Core™  i5-1235U (10-core, cache de 12MB, até 4.4GHz)</h2>
+                        <span>R$ 2.800,00</span>
+                        <a href="detalheProduto.html"><button>Saiba mais</button></a>
+                        <a href="editProduto.html"><button>Editar</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/notebook/note3.jpg" class="img-fluid card-img" alt="...">
+                    <div>
+                        <h1>Lenovo V14 14" AMD</h1>
+                        <h2>deal para computação diária e perfeito para portabilidade, o Lenovo V14 Geração 3 (AMD 14") pesa apenas 1,5 kg/3,3 lb.</h2>
+                        <span>R$ 2.400,00</span>
+                        <a href="detalheProduto.html"><button>Saiba mais</button></a>
+                        <a href="editProduto.html"><button>Editar</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/notebook/note4.jpg" class="img-fluid card-img" alt="...">
+                    <div>
+                        <h1>Notebook Positivo Motion C4128Ei Intel® Celeron® Dual-Core™ Linux 14" - Vermelho</h1>
+                        <h2>Intel® Celeron® Dual-Core™LinuxSSD 128 GB4GBTeclas Netflix | Deezer | YouTube</h2>
+                        <span>R$  4.128,00</span>
+                        <a href="detalheProduto.html"><button>Saiba mais</button></a>
+                        <a href="editProduto.html"><button>Editar</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>      
+    </div>
+
+    <br></br>
+
+    <div class="container bg-info" id="tv">
+        <h2>Televisão</h2>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="images/tv/tv1.png" class="img-fluid card-img" alt="...">
+                    <div>
+                        <h1>Smart TV QLED 98</h1>
+                        <h2>4K TCL Google TV 98C735 UHD, Dolby Vision IQ +Atmos, Dual Band, Comando de voz à distância, Google Assistant.</h2>
+                        <span>R$ 26.000,00</span>
+                        <a href="detalheProduto.html"><button>Saiba mais</button></a>
+                        <a href="editProduto.html"><button>Editar</button></a>
+                    </div>
+                </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/tv/tv2.png" class="img-fluid card-img" alt="...">
+                        <div>
+                            <h1>Smart TV 50</h1>
+                            <h2>UHD 4K LED Samsung 50CU7700 - Wi-Fi Bluetooth Alexa 3 HDMI</h2>
+                            <span>R$ 2.200,00</span>
+                            <a href="detalheProduto.html"><button>Saiba mais</button></a>
+                            <a href="editProduto.html"><button>Editar</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/tv/tv3.jpg" class="img-fluid card-img" alt="...">
+                        <div>
+                            <h1>Samsung Smart TV Crystal 43</h1>
+                            <h2>4K UHD CU7700 - Alexa built in, Samsung Gaming Hub.</h2>
+                            <span>R$ 1.900,00</span>
+                            <a href="detalheProduto.html"><button>Saiba mais</button></a>
+                            <a href="editProduto.html"><button>Editar</button></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card">
+                        <img src="images/tv/tv4.png" class="img-fluid card-img" alt="...">
+                        <div>
+                            <h1>Smart TV HD LED 32</h1>
+                            <h2>Samsung T4300 - Wi-Fi HDR 2 HDMI 1 USB</h2>
+                            <span>R$ 1.100,00</span>
+                            <a href="detalheProduto.html"><button>Saiba mais</button></a>
+                            <a href="editProduto.html"><button>Editar</button></a>
+                        </div>
+                    </div>
+            </div>
+        </div>      
+    </div>
+</body>
+</html>

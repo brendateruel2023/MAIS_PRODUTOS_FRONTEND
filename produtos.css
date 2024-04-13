@@ -1,0 +1,81 @@
+body {
+    background: linear-gradient(to left top, #031A9A, #539dff);
+}
+
+.card {
+    background-color: #fff;
+    width: 300px;
+    height: 260;
+    border-radius: 12px;
+    box-shadow: 4px 4px 12px #aaaa;
+}
+
+.card div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    height: 50%;
+}
+
+.card-img {
+    height: 250px; 
+    object-fit: cover;
+}
+
+.card h1 {
+    font-size: 1.2rem;
+}
+
+.card h2 {
+    font-size: .9rem;
+    color: #aaaa;
+}
+
+.card button {
+    padding: 10px 55px;
+    font-size: 30px;
+    background: rgb(60, 127, 235);
+    border: 1px solid #555;
+    border-radius: 5px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+h1 {
+    color: rgb(60, 127, 235)
+}
+
+.btn {
+    padding: 0.5px 0.5px;
+    color: black;
+    background: rgb(60, 127, 235);
+    border: 1px solid #555;
+    border-radius: 5px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: rgb(42, 92, 199);
+    transition: background 1s;
+}
+
+.btnEdit {
+    padding: 30px 55px;
+    font-size: 30px;
+    background: rgb(108, 228, 226);
+    border: 1px solid #555;
+    border-radius: 5px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+}
+
+.btnEdit:hover {
+    background-color: rgb(58, 162, 237);
+    transition: background 1s;
+}

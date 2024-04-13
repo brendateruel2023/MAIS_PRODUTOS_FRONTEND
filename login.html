@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>LOGIN</title>
+        <link rel="stylesheet" href="css/login.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body background="https://wallpapercave.com/wp/wp3537541.jpg"> 
+        <div class="page">
+            <h1 id="hello">LOGIN</h1>
+            <p id="texto" hidden>Loading...</p>
+            <div id="login">
+                    <input id="input-email" type="botao-email" type ="text" placeholder="E-mail"><br><br>
+                    <input id="input-senha" type="password" placeholder="Password"><br>
+                    <p id="acesso-negado" hidden>Acesso invalido</p>
+            </div>
+            <button id="button" onclick="hide()">
+                To enter
+            </button>
+            <button id="cancel" onclick="cancel()">
+                Cancel
+            </button>
+        </div>
+    </body>
+    <script> 
+        function show() {
+            document.getElementById("to enter").innerHTML = 'Teste inserindo texto.';
+        }
+
+        function hide() {
+            var email = document.getElementById('input-email').value; 
+            var senha = document.getElementById('input-senha').value;
+
+            if ((email != "") && (senha != "")) {
+                document.getElementById ("login").hidden - true;
+                document.getElementById ("texto").hidden - false;
+                document.getElementById ("button").hidden - true;
+                document.getElementById ("cancel").hidden - false;
+                window.location.href = "produtos.html";
+            }  else {
+                document.getElementById("acesso-negado").hidden = false
+            }   
+        }
+
+        function cancel() {
+            document.getElementById("login").hidden = false;
+            document.getElementById("texto").hidden = true;
+            document.getElementById("button").hidden = false;
+            document.getElementById("cancel").hidden = true;
+        }
+
+    </script>
+</html>

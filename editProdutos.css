@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to left , #031A9A, #539dff);;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .titulo {
+    text-align: center;
+  }
+  
+  .cabecalho {
+    text-decoration: none;
+    color: #fff;
+
+  }
+
+  .nav .edit a {
+    color: #7686ce; 
+    text-decoration: none;
+  }
+  
+  .nav .edit a:hover {
+    text-decoration: underline; 
+  }
+
+  header {
+    background-color: #241e4d;
+    color: #fff;
+    padding: 20px 0;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    color: white;
+   
+  }
+  
+  nav ul li {
+    display: inline;
+    margin-right: 20px;
+    
+  }
+  
+  form {
+    margin-top: 50px;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input[type="number"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
